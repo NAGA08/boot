@@ -1,0 +1,40 @@
+package bootcamp;
+
+import java.util.Scanner;
+
+public class Details {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// importing the scanner function for input
+		Scanner sc = new Scanner(System.in);
+		// Taking input from console
+		String name = sc.nextLine();
+		// Splitting the string by using split method
+
+		String[] spliting = name.split(",");
+
+		String first = "";
+		int second = 0;
+		String third = "";
+
+		// For loop for 3 variables name,age,gender
+		for (int i = 0; i <= 2; i++)
+
+		{
+			// Splitting the name and storing in first variable
+			first = spliting[0];
+			// Splitting the age and converting into integer and storing in
+			// second variable
+
+			second = Integer.parseInt(spliting[1]);
+			// Splitting the gender and storing in third variable
+
+			third = spliting[2];
+		}
+
+		System.out.println("Name: " + first + "\nAge: " + second + "\nGender: " + third);
+		sc.close();
+	}
+
+}
