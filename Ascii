@@ -1,0 +1,21 @@
+package bootcamp;
+
+public class Ascii {
+
+	public static void main(String[] args) {
+			
+		
+		//defining the integer
+		int i;
+		
+		//initializing the for loop 
+		for(i=0;i<26;i++)
+		{
+			//printing the lower case alphabet in terms of ASCII values
+			System.out.println((char)('a'+i)+ "======>>" + ('a'+i));
+		}
+		
+
+	}
+
+}
