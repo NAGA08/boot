@@ -1,0 +1,26 @@
+package bootcamp;
+
+public class Division {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Taking command line argument and parsing string value to integer
+		int dividend =Integer.parseInt(args[0]); 
+		
+		//Taking command line argument and parsing string value to integer
+		int divisor =Integer.parseInt(args[1]);
+
+		//calculate reminder
+		int remainder = dividend%divisor;
+
+		//calculate quotient
+		int quotient = (int)dividend/divisor;
+
+		System.out.println("Remainder is "+remainder);
+
+		System.out.println("Quotient is "+quotient);
+
+	}
+
+}
